@@ -11,10 +11,10 @@ class NVDiffRasterizerContext:
 
     def initialize_context(
         self, context_type: str, device: torch.device
-    ) -> Union[dr.RasterizeGLContext, dr.RasterizeCudaContext]:
-        if context_type == "gl":
-            return dr.RasterizeGLContext(device=device)
-        elif context_type == "cuda":
+    ) -> Union[dr.RasterizeCudaContext]:
+        # if context_type == "gl":
+        #     return dr.RasterizeGLContext(device=device)
+        if context_type == "cuda":
             return dr.RasterizeCudaContext(device=device)
         else:
             raise ValueError(f"Unknown rasterizer context type: {context_type}")
