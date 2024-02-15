@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="threestudio",
+    name="threestudi",
     version='"0.2.3"',  # the current version of your package
     packages=find_packages(),  # automatically discover all packages and subpackages
     url="https://github.com/threestudio-project/threestudio",  # replace with the URL of your project
